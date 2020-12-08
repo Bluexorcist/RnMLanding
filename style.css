@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo-container img {
+    height: 50px;
+    width: 50px;
+}
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+}
+.logo-container, .nav-links {
+    display: flex;
+    
+}
+.logo-container {
+    flex: 1;
+    align-items: center;
+}
+nav {
+    flex: 1;
+}
+.logo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin: 5px;
+    background: linear-gradient(to right, #5e5e5e, #000000 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #474747;
+}
+.nav-link:hover {
+    border-bottom: 3px solid #727272;
+}
+.animation {
+    
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+.anim {
+    margin: 200px 50px;
+}
+.anim-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 72px;
+}
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    
+    align-items: center;
+}
+.intro {
+    flex: 2;
+}
+.intro-text h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    background: linear-gradient(to right, #1b1b1b, #383838 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    font-size: 24px;
+}
+.cover {
+    flex: 1;
+}
+.cover img {
+    height: 60vh;
+    filter: drop-shadow(0px 5px 3px black);
+}
+.information {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    
+    align-items: center;
+}
+.info {
+    flex: 3;
+}
+.cta {
+    flex: 1;
+}
+.sub {
+    text-decoration: none;
+    background: linear-gradient(to right, #3b3b3b, #4d4d4d );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.subscribe {
+    border-radius: 5px;
+    border: 2px solid  #414141;
+    background: linear-gradient(#afafaf, #c7c7c7, #d6d6d6);
+    
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+.subscribe:active {
+    width: 172px;
+    height: 52px;
+}
+.info-text h1 {
+    margin: 10px 0;
+    font-size: 32px;
+    background: linear-gradient(to right, #1b1b1b, #383838 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info-text p {
+    font-size: 24px;
+}
+.brush1 {
+    position: absolute;
+    top: 14%;
+    right: 31%;
+    z-index: -1;
+}
+.footer {
+    height: 150px;
+    margin: auto;
+    display: flex;
+    width: 90%;
+    background: #414141;
+}
+.contact {
+    margin: auto;
+    display: flex;
+}
+.insta-items, .telegram-items, .vk-items {
+    padding: 0 45px;
+    align-items: center;
+}
+.insta-items img, .telegram-items img, .vk-items img {
+    width: 5vh;
+}
+.insta-item, .telegram-item, .vk-item {
+    display: flex;
+    padding: 5px 0;
+}
+.contact h5 {
+    padding: 7px;
+}
+.contact a {
+    text-decoration: none;
+    color: #d6d6d6;
+}
+@media screen and (max-width: 768px) {
+    .anim-text {
+        font-size: 48px;
+    }
+    .logo-container img {
+        height: 40px;
+        width: 40px;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .brush1 {
+        right: 10%;
+    }
+    .presentation {
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .cover img {
+        margin-top: 50px;
+        height: 40vh;
+    }
+    .information {
+        flex-direction: column-reverse;
+
+    }
+    .footer {
+        height: 300px;
+    }
+    .contact {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 480px) {
+    .brush1 {
+        right: 10%;
+    }
+}
